@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Idul Fitri - Keluarga Besar Alm. Muhammad Husni Thamrin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&family=Meie+Script&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        :root {
+            --emerald: #064e3b;
+            --gold: #c5a059;
+            --cream: #fdfbf7;
+        }
+
+        body {
+            background-color: var(--cream);
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-script {
+            font-family: 'Meie Script', cursive;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #c5a059 0%, #ecd6a6 50%, #c5a059 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='%23064e3b' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .hero-image-container {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            border: 8px solid white;
+            transform: rotate(-2deg);
+            transition: transform 0.5s ease;
+        }
+
+        .hero-image-container:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .ornament {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body class="pattern-bg">
+
+    <!-- Navbar/Header -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-center border-b border-emerald/10">
+        <span class="font-serif italic text-emerald text-lg tracking-widest">Idul Fitri 1447 H</span>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20 pb-16 px-4 md:px-0">
+
+        <!-- Hero Section -->
+        <section class="max-w-4xl mx-auto text-center mb-12 md:mb-20 relative">
+            <div class="ornament top-0 left-0 w-32 h-32 bg-emerald rounded-full blur-3xl opacity-5"></div>
+
+            <!-- Greeting Title -->
+            <div id="greeting-box" class="mb-8 md:mb-12 px-2">
+                <p class="font-script text-2xl md:text-3xl text-gold mb-1 floating">Fitrah & Suci</p>
+                <h2 class="text-lg md:text-xl text-emerald/60 font-medium mb-3 tracking-[0.15em] uppercase">Minal Aidin
+                    Wal Faizin</h2>
+                <h1 class="text-3xl md:text-6xl font-serif font-bold text-emerald mb-4 px-1 italic leading-tight">
+                    Mohon Maaf Lahir <br class="hidden md:block"> & Batin
+                </h1>
+                <div class="w-16 md:w-24 h-1 bg-gold mx-auto rounded-full mb-6 md:mb-8"></div>
+                <p class="max-w-xl mx-auto text-emerald/80 leading-relaxed text-base md:text-lg italic px-2">
+                    "Tiada kata seindah zikir, tiada hari seindah Idul Fitri. Di hari yang fitri ini, kami memohon maaf
+                    atas segala khilaf, lisan yang mungkin meluka, dan hati yang mungkin berprasangka."
+                </p>
+            </div>
+
+            <!-- Family Photo Container -->
+            <div id="photo-box" class="relative inline-block mb-12 md:mb-16 px-2">
+                <div
+                    class="hero-image-container bg-white rounded-xl shadow-xl overflow-hidden max-w-[95vw] md:max-w-xl mx-auto border-[6px] md:border-[12px] border-white ring-1 ring-emerald/10">
+                    <img src="keluarga_besar.png" alt="Foto Keluarga Besar"
+                        class="w-full h-auto grayscale-[5%] hover:grayscale-0 transition-all duration-1000 transform hover:scale-105"
+                        onerror="this.src='https://images.unsplash.com/photo-1584043733555-c110d77c73e3?auto=format&fit=crop&q=80&w=1000'; this.style.opacity='0.5';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald/20 to-transparent pointer-events-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sender Info -->
+            <div id="sender-box" class="space-y-4 md:space-y-6 mb-12 md:mb-16 relative text-center px-2">
+                <p class="text-base md:text-xl text-emerald/60 font-medium tracking-widest uppercase">Salam Hangat Dari
+                    Kami,</p>
+                <div
+                    class="glass p-6 md:p-14 rounded-[1.5rem] md:rounded-[2rem] inline-block shadow-2xl border-t border-white relative group overflow-hidden w-full max-w-sm md:max-w-none">
+                    <h3 class="text-xl md:text-4xl font-serif font-bold text-emerald leading-tight relative z-10">
+                        Keluarga Besar <br>
+                        <span class="text-emerald/70 text-lg md:text-2xl block mt-2 mb-1">Bapak Alm.</span>
+                        <span class="gold-gradient">Muhammad Husni Thamrin</span> <br>
+                        <span class="text-emerald/50 text-sm md:text-base italic">(Rahimahullah)</span> <br>
+                        <span class="text-gold my-1 md:my-2 block">&</span> <br>
+                        <span class="gold-gradient">Ibu Hj. Trimurti</span>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Simplified Address Section -->
+            <div id="address-box" class="max-w-2xl mx-auto py-6 md:py-8 border-t border-emerald/10 px-4">
+                <h4 class="text-emerald font-serif text-lg md:text-xl mb-2 md:mb-3 font-bold tracking-widest uppercase">
+                    Alamat Rumah Kami</h4>
+                <p class="text-base md:text-xl leading-relaxed text-emerald/80 font-normal">
+                    Jalan. M. Sohor, Gang. Mekar, No. 40, <br>
+                    Pontianak Selatan, Kota Pontianak.
+                </p>
+                <div class="mt-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Jl.+M.+Sohor+Gang+Mekar+No.+40+Pontianak"
+                        target="_blank" class="text-gold hover:underline font-bold text-base md:text-lg">
+                        Klik untuk melihat di Google Maps &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center border-t border-emerald/10 opacity-60">
+        <p class="text-sm tracking-widest uppercase">&copy; 2026 Keluarga Besar M. Husni Thamrin</p>
+    </footer>
+
+    <!-- Animations -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Entrance Animations
+        gsap.from("#greeting-box", {
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out"
+        });
+
+        gsap.from("#photo-box", {
+            scale: 0.9,
+            opacity: 0,
+            duration: 1.5,
+            delay: 0.3,
+            ease: "back.out(1.7)"
+        });
+
+        gsap.from("#sender-box", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#sender-box",
+                start: "top 80%"
+            }
+        });
+
+        gsap.from("#address-box", {
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#address-box",
+                start: "top 85%"
+            }
+        });
+    </script>
+</body>
+
+</html>
